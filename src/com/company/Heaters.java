@@ -4,6 +4,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * War is coming! During the contest, your first job is to design a standard rocket launcher with a fixed  radius to attack all the enemy positions.
+ * Every enemy position can be attacked, as long as the position is within the rocket launcher attack radius range.
+ * Input: Enemies positions = [1,2,3], RL = [2]
+ * Output: 1
+ */
 public class Heaters {
 
     public int findRadius(int [] houses, int [] heaters) {

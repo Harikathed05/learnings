@@ -7,7 +7,7 @@ import java.util.HashMap;
  *
  * Letters are case sensitive, for example, "Aa" is not considered a palindrome here.
  *
- *
+ *e.g input -> erepapere -> output -> 9 ; input -> abckayakcba -> o/p -> 11; input -> abccccdd output -> 7(dccbccd)
  */
 public class LongestPalindrome {
     public static void main(String[] args) {
