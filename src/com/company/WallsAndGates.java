@@ -10,14 +10,17 @@ public class WallsAndGates {
         return true;
     }
     public void dfs(int i, int j, int[][] grid , int dist) {
+        int [] rows_x = new int[]{-1,0,1,0};
+        int [] rows_y = new int[]{0,1,0,-1};
         if(!isSafe(i , j, grid) || dist > grid[i][j]) {
             return;
         }
         grid[i][j] = dist;
-        dfs(i -1, j , grid, dist + 1);
-        dfs(i , j + 1, grid, dist + 1);
-        dfs(i + 1, j , grid, dist + 1);
-        dfs(i , j -1, grid, dist + 1);
+        for(int k = 0; k < 4; k++) {
+            if(isSafe(i + rows_x[k] , j + rows_y[k], grid)) {
+                dfs(i + rows_x[k], j + rows_y[k], grid, dist + 1);
+            }
+        }
     }
     public static void main(String [] args) {
         WallsAndGates wallsAndGates = new WallsAndGates();
