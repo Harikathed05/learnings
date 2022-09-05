@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 /**
  * War is coming! During the contest, your first job is to design a standard rocket launcher with a fixed  radius to attack all the enemy positions.
  * Every enemy position can be attacked, as long as the position is within the rocket launcher attack radius range.
- * Input: Enemies positions = [1,2,3], RL = [2]
- * Output: 1
+ * Input: Enemies positions = [1,2,3], RL positions = [2]
+ * Output: minimum radius required  ? => 1
  */
 public class Heaters {
 
